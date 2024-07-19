@@ -1,0 +1,6 @@
+if SHIELD_KEYLIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "KeyLight"
+
+endif
