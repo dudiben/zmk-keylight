@@ -33,8 +33,8 @@
         steps = <80>;
         status = "okay";
     };
-
-    &pro_micro_i2c {
+};
+ &pro_micro_i2c {
     status = "okay";
     
     oled: ssd1306@3c {
@@ -52,4 +52,3 @@
         prechargep = <0x22>;
         };
     };
-};
