@@ -11,7 +11,7 @@
             bindings = <
                 &bootloader
                 &kp 1
-                &kp 2
+                &bootloader
                 &kp 3
                 &kp 4
                 &kp 5
