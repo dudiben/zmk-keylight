@@ -10,11 +10,11 @@
         default_layer {
             bindings = <
                 &bootloader
-                &kp 1
-                &bootloader
-                &kp 3
-                &kp 4
-                &kp 5
+                &kp X
+                &kp Y
+                &kp Z
+                &kp A
+                &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
