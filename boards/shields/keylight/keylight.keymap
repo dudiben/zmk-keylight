@@ -4,6 +4,19 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        rgb_encoder_hu: rgb_encoder_hu {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
+
+        rgb_encoder_sa: rgb_encoder_sa {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -14,10 +27,10 @@
                 &kp Y
                 &kp Z
                 &kp A
-                &kp RGB_EFF
+                &rgb_ug RGB_EFF
             >;
 
-            sensor-bindings = <&inc_dec_kp RGB_HUI RGB_HUD &inc_dec_kp RGB_SAI RGB_SAD>;
+            sensor-bindings = <&rgb_encoder_hu &rgb_encoder_sa>;
         };
     };
 };
