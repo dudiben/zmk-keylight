@@ -14,10 +14,10 @@
                 &kp Y
                 &kp Z
                 &kp A
-                &kp B
+                &kp RGB_EFF
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp RGB_HUI RGB_HUD &inc_dec_kp RGB_SAI RGB_SAD>;
         };
     };
 };
