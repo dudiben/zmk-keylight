@@ -9,13 +9,13 @@
         rgb_encoder_hu: rgb_encoder_hu {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
 
         rgb_encoder_sa: rgb_encoder_sa {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
+            bindings = <&kp RPG_UP>, <&kp PG_DN>;
         };
     };
     keymap {
